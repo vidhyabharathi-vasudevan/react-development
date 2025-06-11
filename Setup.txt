@@ -1,0 +1,6 @@
+1)Node.JS
+     Download and install it from node's official website
+     Set the environment variable too to access it anywhere in the system
+2)NPM = node package manager
+Node = Backend
+3)ES7+ React/Redux/React-Native snippets - Extension in VS code
