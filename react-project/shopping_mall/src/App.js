@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+  const array = ["earn", "give", "make"];
+  const ans = Math.floor(Math.random()*3); // this line just picking numbers from 0-2 randomly
+  //whenever we reload / refresh this page or our site, we'll get anyone from the array because of that random
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p>Shall we start building a shopping mall?</p>
+      <p>Lets {array[ans]} money</p>
+    </>
   );
 }
 

@@ -1,0 +1,14 @@
+App.js -> is the main/ Head/ Parent/ root component of this project/ shopping mall
+index.js -> javascript fundamental file, kind of root
+
+JSX:
+Functional components we are gonna learn
+(class component outdated as of now)
+{} -> To insert javascript code in 
+
+Objects are not valid as a react child
+We can't pass boolean values as a react child
+Note: component name should start with Capital letter naming convention only
+
+
+cntrl + alt + r = to search snippets
