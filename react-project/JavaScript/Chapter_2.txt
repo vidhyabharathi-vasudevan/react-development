@@ -1,0 +1,3 @@
+To link JavaScript code in html file,
+    <head> -> script tag add src attribute and path name 
+    <script src="./index.js"></script>  like this 

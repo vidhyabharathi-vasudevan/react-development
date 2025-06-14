@@ -1,0 +1,32 @@
+Numbers:
+    const a = 42;
+    console.log(a); // 42
+    const b = 42.0;
+    console.log(b); // 42
+    const c = 42.01 
+    console.log(c); //42.01
+
+    To convert a string to a number
+    Use Number method
+    console.log(Number('1')); //Op: 1 with number type
+
+    console.log(Number("Vidhya")); //NaN
+    console.log(Number(true)); //1 for false its 0
+    console.log(Number(undefined)); //NaN
+
+Methods: 
+    1) isInteger -> Number.isInteger(a) -> returns a boolean value
+    2) parseFloat -> converts other type to Float -> "432.908aaa" -> 432.908
+    3) parseInt -> converts to int value -> 43.90 -> 43
+    4) .toFixed(2) -> returns 2 digits decimel value (in string data type)
+    5) toString -> converts other type to string data type 
+    6) isNaN
+    7) Number.isNaN
+
+Chaining: 
+  calling more than one method in a same line
+  ex: Number.parseFloat(a).toFixed(2).toString()
+
+
+
+

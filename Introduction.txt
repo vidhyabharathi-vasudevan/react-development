@@ -4,6 +4,9 @@ React - Library - Declarative language
 Babel - JavaScript Compiler
     is also called as transpiler that converts modern JavaScript code like (ES2015/ES6+ syntax, JSX and typescript) into a backwards- 
 compatible version that can be run by older browsers and environments
+    Babel excels at: Newer JavaScript -> Older JavaScript (Transpilation)
+    Babel is not primarily for: Older JavaScript -> Newer JavaScript (Automated Modernization) - 
+    This typically involves refactoring, manual updates, and potentially the use of specialized "codemod" tools.
     it used to write latest version of javascript code
 JSX:
     JavaScript syntax

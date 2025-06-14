@@ -1,0 +1,5 @@
+Functional Components:
+    Obviously We'll have the function here (No classes involved) 
+Components:
+    Just like functions, We can create a component once and use it anywhere as needed by exporting and importing
+    

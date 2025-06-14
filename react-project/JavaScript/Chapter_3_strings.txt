@@ -1,0 +1,12 @@
+Strings and Its methods:
+Refer index.js for its functionalities
+    1) length
+    2) charAt
+    3) indexOf
+    4) lastIndexOf
+    5) slice(startIndex,endIndex) EndIndex is exclusive
+    6) toUpperCase -> VIDHYABHARATHI
+    7) toLowerCase -> vidhyabharathi
+    8) includes -> just check whether that particular character or string exists in that string returns a boolean value if its there
+    9) split -> console.log(myV.split('i')); // returns a string array with the values of splited strings when it finds i op:['V', 'dhyabharath', '']
+

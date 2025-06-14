@@ -4,7 +4,7 @@ index.js -> javascript fundamental file, kind of root
 JSX:
 Functional components we are gonna learn
 (class component outdated as of now)
-{} -> To insert javascript code in 
+{} -> To insert javascript code in html elements 
 
 Objects are not valid as a react child
 We can't pass boolean values as a react child

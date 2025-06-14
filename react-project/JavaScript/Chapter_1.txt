@@ -1,0 +1,48 @@
+Data types in javascript;
+    1)String
+    2)Number
+    3)Boolean
+    4)Undefined 
+
+To get the type of that value/variable
+    typeof 90 -> 'number'
+    typeof true -> 'boolean'
+    typeof 'Vb' -> 'string'
+    let myVariable  -> typeof myVariable  -> 'undefined'
+    
+Variables -> follow camalCasing for all names(ex. Functions and variables,,,)
+String concatination applies here as well (like java, programming world)
+
+Difference between == and ===
+
+In JavaScript, both == (equality operator) and === (strict equality operator) are used for comparison, but they differ in how they handle type coercion.
+
+Here's a breakdown of the differences:
+
+== (Equality Operator)
+Type Coercion: The == operator performs type coercion before making the comparison. This means that if the operands are of different types, JavaScript will attempt to convert one or both operands to a common type before comparing their values.
+Behavior: It checks if the values are the same, even if their data types are different.
+Coercion means - to force/ forcefully converting here
+Examples:
+
+5 == '5' results in true (The string '5' is coerced to the number 5)
+0 == false results in true ( false is coerced to 0)
+null == undefined results in true
+1 == true results in true ( true is coerced to 1)
+
+
+=== (Strict Equality Operator)
+No Type Coercion: The === operator does not perform type coercion. It requires both the value and the data type of the operands to be the same.
+Behavior: It checks if the values are the same AND if their data types are the same.
+Examples:
+
+5 === '5' results in false (Different types: number vs. string)
+0 === false results in false (Different types: number vs. boolean)
+null === undefined results in false (Different types)
+1 === true results in false (Different types)
+
+alert("hello world") -> results in alerting the page with hello world message
+
+
+
+Scoping: var, let, const
