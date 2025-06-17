@@ -6,12 +6,12 @@ console.log(typeof(5))
 
 //Strings:
  let myV = 'Vidhyabharathi';
- console.log(myV.length);
+ console.log(myV.length); //14
 
 //Methods;
-console.log(myV.charAt(13));  //returns the character at given index
+console.log(myV.charAt(13));  //returns the character at given index -> op: i
 console.log(myV.indexOf('h')); //returns the index of given character and returns -1 if the given character is not found 
-//also if there are 2 occurance for that particular character it returns the first one(Case sensitive)
+//also if there are 2 occurance for that particular character it returns the first one(Case sensitive) ->op:3
 
 console.log(myV.lastIndexOf('a')); // unlike indexof it returns the last index of that particular string if it occurs more than one time(Case-sensitive)
 

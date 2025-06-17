@@ -21,7 +21,7 @@ console.log(shouldReturnName("Someone@yopmail.com"));
 function toProperCase(a) {
   return a.charAt(0).toUpperCase() + a.slice(1).toLowerCase();
 }
-console.log(toProperCase("sowioioi"));
+console.log(toProperCase("sowioioi")); //Sowioioi
 
 //Arrow function namesless functiom
 

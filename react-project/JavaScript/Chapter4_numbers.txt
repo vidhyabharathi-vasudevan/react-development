@@ -22,6 +22,13 @@ Methods:
     5) toString -> converts other type to string data type 
     6) isNaN
     7) Number.isNaN
+    isNaN(): "Can this value be coerced into something that is NaN?"
+    Number.isNaN(): "Is this value literally NaN?"
+        console.log(isNaN(NaN));           // true
+        console.log(Number.isNaN(NaN));    // true
+
+        console.log(isNaN('hello'));       // true (because 'hello' coerces to NaN)
+        console.log(Number.isNaN('hello'));// false (because 'hello' is not literally NaN)
 
 Chaining: 
   calling more than one method in a same line

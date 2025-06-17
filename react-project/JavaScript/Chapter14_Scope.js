@@ -6,6 +6,8 @@ console.log(`global: ${x}`); //global: 2
 
 //op: 2 overrides the latest one also we can declare the same variable name more than one time
 // but after 2015 we are not using var
+
+
 //let 
 
 //when you need to change the value in future
@@ -22,7 +24,11 @@ console.log(`global: ${a}`); //global: 60
 //const variable must be initialized when we define them
 const v = 800;
 console.log(`global: ${v}`); //global: 800
-// we can't change the value of v anymore
+//we can't reassign the value of array and object but we can modify the const array and object
+//const arr =[90,90]
+//arr.push(78) -> this is possible
+//arr=[78,90] -> this is not possible
+//same for object too
 //if we try to change it we will end up in TypeError: Assignment to constant variable.
 // v = 90; 
 

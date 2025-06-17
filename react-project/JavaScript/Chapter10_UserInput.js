@@ -1,7 +1,7 @@
 alert("Hi Vidhya");
 
 let bool = confirm("Are you sure to submit this form");
-//this confirm returns true when they click ok and returns false when they click cancel
+//this "confirm" returns true when they click ok and returns false when they click cancel
 console.log(bool);
 
 let promptx = prompt("Please enter something");
