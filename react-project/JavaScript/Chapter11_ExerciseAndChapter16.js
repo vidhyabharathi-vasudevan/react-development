@@ -1,18 +1,6 @@
 // gonna design stone paper scissors as interactive game
-console.log(location);
-let conf = confirm("Shall we play Stone Paper Scissors?");
-// console.log(conf);
-while (true) {
-  if (conf) {
-    let user = prompt("Please enter Stone or Paper or Scissors")?.trim();
-    console.log(user);
-    let rand = Math.floor(Math.random() * 3);
-    const arr = ["Stone", "Paper", "Scissors"];
-    let comp = arr[rand];
-    console.log(comp);
-    if (user) {
-      const result =
-        comp === user
+const resultFunc = (comp,user)=>{
+  return  comp === user
           ? "Tie game"
           : comp === "Stone"
           ? user === "Scissors"
@@ -25,6 +13,20 @@ while (true) {
           : user === "Paper"
           ? "Computer wins"
           : "User wins";
+}
+console.log(location);
+let conf = confirm("Shall we play Stone Paper Scissors?");
+// console.log(conf);
+while (true) {
+  if (conf) {
+    let user = prompt("Please enter Stone or Paper or Scissors")?.trim();
+    console.log(user);
+    let rand = Math.floor(Math.random() * 3);
+    const arr = ["Stone", "Paper", "Scissors"];
+    let comp = arr[rand];
+    console.log(comp);
+    if (user) {
+      const result = resultFunc(comp,user)
       alert(result);
         console.log(result);
       let x = confirm("Play Again?");
