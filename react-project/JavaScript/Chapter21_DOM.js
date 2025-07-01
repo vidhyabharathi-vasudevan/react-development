@@ -9,19 +9,28 @@
 // + -> div + p -> next adjacent p only
 // ~ div ~ p -> all adjacent p elements
 
+function createElements() {
+  const newDiv = document.createElement("div");
+  console.log(newDiv);
 
-const newDiv = document.createElement("div")
-console.log(newDiv);
+  document.body.appendChild(newDiv); //appendChild is used to add the element to the body of the document
 
+  newDiv.textContent = "Hello There";
+  newDiv.style.width = "100px";
+  newDiv.style.height = "100px";
+  newDiv.style.backgroundColor = "red";
+  newDiv.style.display = "flex";
+  newDiv.style.flexDirection = "row";
+  newDiv.style.justifyContent = "Center";
+  newDiv.style.alignItems = "Center";
+}
+function returnSpace() {
+  const p = document.createElement("p");
+  p.textContent = "";
+  document.body.appendChild(p);
+}
 
-document.body.appendChild(newDiv) //appendChild is used to add the element to the body of the document
-
-newDiv.textContent = "Hello There"
-newDiv.style.width = '400px'
-newDiv.style.height = '400px'
-newDiv.style.backgroundColor = 'red'
-newDiv.style.display = 'flex'
-newDiv.style.flexDirection = 'row'
-newDiv.style.justifyContent = 'Center'
-newDiv.style.alignItems = 'Center'
-
+for (let i = 1; i <= 12; i++) {
+  createElements();
+  returnSpace();
+}
