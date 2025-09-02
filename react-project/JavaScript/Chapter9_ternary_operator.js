@@ -1,4 +1,4 @@
-// also called as conditional operator
+// Ternary Operator - also called as conditional operator 
 //syntax:
 // Condidtion ? true : false
 

@@ -1,7 +1,7 @@
 console.log('Hello world')
 //both syntax are correct, we can follow
-console.log(typeof '5');
-console.log(typeof(5))
+console.log(typeof '5'); //string
+console.log(typeof(5)) //number
 
 
 //Strings:
@@ -19,7 +19,7 @@ console.log(myV.slice(5,8)); //O/p: abh because its starting from 5th index and 
 
 console.log(myV.toLowerCase()); //vidhyabharathi
 console.log(myV.toUpperCase())  //VIDHYABHARATHI
-console.log(myV.includes('i')); // just check whether that particular character or string exist in that string returns a boolean value if its there(Case sensitive)
+console.log(myV.includes('i')); //true just check whether that particular character or string exist in that string returns a boolean value if its there(Case sensitive)
 console.log(myV.split('i')); // returns a string array with the values of splited strings when it finds i op:['V', 'dhyabharath', '']
 console.log(myV.split("")); //['V', 'i', 'd', 'h', 'y', 'a', 'b', 'h', 'a', 'r', 'a', 't', 'h', 'i']
 
@@ -29,7 +29,7 @@ console.log(myV.split("")); //['V', 'i', 'd', 'h', 'y', 'a', 'b', 'h', 'a', 'r',
 const a = 42;
 console.log(a); // 42
 const b = "42.0432323fff";
-console.log(b); // 42
+console.log(b); // 42.0432323fff
 const c = 42.01 
 console.log(c); //42.01
 
@@ -39,10 +39,10 @@ console.log(Number("Vidhya")); //NaN
 console.log(Number(true)); //1 for false its 0
 console.log(Number(undefined)); //NaN
 
-console.log(Number.isInteger(a));
-console.log(Number.isInteger(c));
-console.log(Number.parseFloat(b).toFixed(3));
-console.log(a.toString());
+console.log(Number.isInteger(a)); //true
+console.log(Number.isInteger(c));//false
+console.log(Number.parseFloat(b).toFixed(3)); //'42'
+console.log(a.toString());//'42'
 
 console.log(Number.isNaN("Vidhya")); //false
 console.log(isNaN("Vidhya")) // true

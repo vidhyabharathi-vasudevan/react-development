@@ -14,9 +14,9 @@ function shouldReturnName(name) {
   //     or
   return name.slice(0, name.indexOf("@"));
 }
-console.log(shouldReturnName("Vidhya@gamil.com"));
-console.log(shouldReturnName("Sowmiya2501@gmail.com"));
-console.log(shouldReturnName("Someone@yopmail.com"));
+console.log(shouldReturnName("Vidhya@gamil.com"));//Vidhya
+console.log(shouldReturnName("Sowmiya2501@gmail.com")); //Sowmiya
+console.log(shouldReturnName("Someone@yopmail.com")); //Someone
 
 function toProperCase(a) {
   return a.charAt(0).toUpperCase() + a.slice(1).toLowerCase();
@@ -28,4 +28,4 @@ console.log(toProperCase("sowioioi")); //Sowioioi
 const arrowFunction = (args) => {
   return args.toLowerCase();
 };
-console.log(arrowFunction("VIDHYA"));
+console.log(arrowFunction("VIDHYA"));//vidhya

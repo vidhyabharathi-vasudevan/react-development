@@ -11,6 +11,7 @@ console.log(myArr.length); //4
 myArr.pop();
 console.log(myArr); //['something', 'other things', 90]
 
+
 //ushift -> to insert the element from the first position
 myArr.unshift("Insertion at 0th index")
 console.log(myArr); //['Insertion at 0th index', 'something', 'other things', 90]
@@ -19,6 +20,11 @@ console.log(myArr); //['Insertion at 0th index', 'something', 'other things', 90
 // to delete the element from the fist position
 myArr.shift();
 console.log(myArr); //['something', 'other things', 90]
+
+// push -> insertion at last
+//unshift -> insertion at first
+//pop ->deletion at last
+//shift -> deletion at first
   
 
 //push and unshift will return the "length" of the array (with newly added element -> length)

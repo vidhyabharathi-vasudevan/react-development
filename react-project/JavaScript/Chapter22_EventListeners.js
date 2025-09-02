@@ -18,7 +18,7 @@ document.addEventListener('readystatechange',(event)=>{
 })
 const initApp = () =>{
 const element = document.createElement("button");
-document.body.appendChild(element);
+document.body.appendChild(element);//used to append the element to the body
 element.textContent = "Event Listeners..";
 element.style.height = "200px";
 element.style.width = "200px";

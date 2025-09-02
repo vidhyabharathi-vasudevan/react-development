@@ -7,7 +7,7 @@
 //Without strict mode the above line of code will work fine
 //to avoid this we can use strict mode
 
-//now the line number 4 throws an error saying: ReferenceError variable os not defined -> we have initialized a value for that variable but we didn't define the variable
+//now the line number 4 throws an error saying: ReferenceError variable is not defined -> we have initialized a value for that variable but we didn't define the variable
 
 //to solve the above issue we must declare the variable as let or const
 

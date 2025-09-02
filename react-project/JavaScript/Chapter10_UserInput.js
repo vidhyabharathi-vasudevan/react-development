@@ -11,8 +11,11 @@ let promptx = prompt("Please enter something");
 // ?? -> null ternary operator
 // console.log(promptx ?? "Cancelled it");
 //this log will get only if promptx is null
+//?? - null ternary operator -> false ?? true -> returns false -> the first one is false so returns false, it will not go for next one
+//go to the second one if the first one is null/undefined
 
-if (promptx) {
+
+if (promptx === null) {
   console.log(promptx ?? "You entered your name but cancelled it");
 } else {
   console.log("You didn't enter your name");
