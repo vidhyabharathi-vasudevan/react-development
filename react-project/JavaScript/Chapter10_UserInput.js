@@ -1,3 +1,7 @@
+//alert
+//confirm
+//prompt
+
 alert("Hi Vidhya");
 
 let bool = confirm("Are you sure to submit this form");

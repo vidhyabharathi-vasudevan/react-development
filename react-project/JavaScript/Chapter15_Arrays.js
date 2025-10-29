@@ -40,7 +40,7 @@ console.log(myArr[2]); //undefined
 
 //to resolve this undefined problem we can use splice method
 
-myArr.splice(2,1); //2 -> index, 1-> how many elements to be deleted
+myArr.splice(2,1); //2 -> index, 1-> how many elements to be deleted = first arg -> starting index, second arg -> how many elements to be deleted
 console.log(myArr); // ['something', 'other things']
 
 //we can use splice method not only for deleting but for replacing too

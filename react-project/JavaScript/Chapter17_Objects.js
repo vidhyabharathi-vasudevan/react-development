@@ -150,11 +150,13 @@ console.log(movie.hero); //Vijay
 function sings(music){
     return music
 }
+//here music refers to the full object movie1
 console.log(sings(movie1)); //{hero: 'Vijay', heroien: 'Sai pallavi', director: 'Lokesh', music: 'Aniruth'}
 
 function sing({music}){
     return music
 }
+//here {music} refers the music key from the movie1 object
 console.log(sing(movie1)); //Aniruth
 //to pass only the key just use {} // key name must be same
 

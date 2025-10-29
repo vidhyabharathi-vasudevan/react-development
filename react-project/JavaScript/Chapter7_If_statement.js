@@ -4,7 +4,7 @@ if (a) {
   console.log(34);
 } 
  else {
-  console.log(9090);
+  console.log(9090); //9090
 }
 
 

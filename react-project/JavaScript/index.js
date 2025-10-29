@@ -19,7 +19,7 @@ console.log(myV.slice(5,8)); //O/p: abh because its starting from 5th index and 
 
 console.log(myV.toLowerCase()); //vidhyabharathi
 console.log(myV.toUpperCase())  //VIDHYABHARATHI
-console.log(myV.includes('i')); //true just check whether that particular character or string exist in that string returns a boolean value if its there(Case sensitive)
+console.log(myV.includes('i')); //true just check whether that particular character or string exist in that string, returns a boolean value if its there(Case sensitive)
 console.log(myV.split('i')); // returns a string array with the values of splited strings when it finds i op:['V', 'dhyabharath', '']
 console.log(myV.split("")); //['V', 'i', 'd', 'h', 'y', 'a', 'b', 'h', 'a', 'r', 'a', 't', 'h', 'i']
 
