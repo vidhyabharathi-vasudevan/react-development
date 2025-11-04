@@ -46,7 +46,7 @@ console.log(obj.subDivisions[1]); //Switch
 //example
 console.log(obj["isSubscriber"]); //true
 
-//we can declare a function to that object
+//we can declare a function to/ inside that object
 
 console.log(obj.action()); //Hi from action function
 //but remember this whatever data type we have whether is it boolean,array or object or function we should define the key first with : then we should assign the value

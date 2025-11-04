@@ -29,3 +29,19 @@ const arrowFunction = (args) => {
   return args.toLowerCase();
 };
 console.log(arrowFunction("VIDHYA"));//vidhya
+
+// difference between slice and splice
+// slice -> returns a new array, without modifying the original array
+// splice -> modify the original array -> removes the elements at index 
+
+// const b= [1,2,3]
+// b.slice(0,1)
+// [1]
+// b
+// (3) [1, 2, 3]
+
+
+// b.splice(0,1)
+// [1]
+// b
+// (2) [2, 3]
