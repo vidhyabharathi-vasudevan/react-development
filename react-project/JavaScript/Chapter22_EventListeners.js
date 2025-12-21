@@ -43,7 +43,9 @@ element.addEventListener('click',(event)=>{
 }
 
 //Event doubling up in js
-// Event bubbling in JavaScript is a mechanism within the Document Object Model (DOM) where an event, when triggered on an element, first executes any handlers attached to that element and then propagates upwards through its ancestor elements in the DOM tree. This process continues until the event reaches the document object or the root of the DOM. 
+// Event bubbling in JavaScript is a mechanism within the Document Object Model (DOM) where an event, when triggered on an element, first executes any handlers attached to that element 
+// and then propagates upwards through its ancestor elements in the DOM tree. 
+// This process continues until the event reaches the document object or the root of the DOM. 
 //for example if we have a div and inside that we have h1 and we have 2 clickevents for div and h1 if we click h1 the event will reflect for both h1 and div -> only reflect parent, ie if we click child -> parent will affect till root ->  if we click parent -> child will not get affected
 
 //to stop this event doubling up -> we can use event.stopPropagation -> if we click child only child will get impacted that is that event will get perfomed not for parent one

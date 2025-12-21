@@ -20,7 +20,7 @@ console.log(newJSON); //{"name":"Vidhyabharathi Vasudevan","age":23,"profession"
 //if we have function in the object we will not get here(in JSON)
 console.log(newJSON.name); //undefined
 console.log(typeof newJSON); //string
-console.log(typeof myObj); //
+console.log(typeof myObj); //object
 class Hi{
   constructor(){
     this.type = 'type'
@@ -34,6 +34,9 @@ console.log(receiveJSON); //{name: 'Vidhyabharathi Vasudevan', age: 23, professi
 console.log(typeof receiveJSON);//object
 //To convert the string json to object we can use parse function
 //its parsing the string into an object
+// JSON to String -> stringify()
+// String to JSON -> parse() -> to object
+
 
 
 

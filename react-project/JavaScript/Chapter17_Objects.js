@@ -3,6 +3,7 @@
 
 const newObj = { name: "Vidhyabharathi" };
 console.log(newObj["name"]); //Vidhyabharathi
+console.log(newObj.name)//Vidhyabharathi
 
 // we can have more than one key value pair and we can access the value from the key in object
 console.log(newObj); //{name: 'Vidhyabharathi'}
@@ -46,7 +47,7 @@ console.log(obj.subDivisions[1]); //Switch
 //example
 console.log(obj["isSubscriber"]); //true
 
-//we can declare a function to/ inside that object
+//we can declare a function too inside that object
 
 console.log(obj.action()); //Hi from action function
 //but remember this whatever data type we have whether is it boolean,array or object or function we should define the key first with : then we should assign the value
@@ -100,6 +101,7 @@ const movie = {
   director: "Lokesh",
   music: "Aniruth",
 };
+console.log(Object.keys(movie).length) // 4
 console.log(Object.keys(movie)); //['hero', 'heroien', 'director', 'music'] -> it is returning a string array with the keys
 console.log(Object.values(movie)); //['Vijay', 'Sai pallavi', 'Lokesh', 'Aniruth'] -> same as keys method it is just returning all values in an array
 
@@ -110,7 +112,7 @@ for (let job in movie) {
   console.log(`${job} is ${movie[job]}`); //hero is Vijay like this all keys
 
   //   console.log(movie[job]); //will print all the values in next next lines
-  //   console.log(movie.job); //undefined -> because we don't have any key as job so we are getting undefined. to get the value we can use movie[job] inside the for loop
+  //   console.log(movie.job); //undefined -> because we don't have any key as "job" so we are getting undefined. to get the value we can use movie[job] inside the for loop
 }
 
 //to delete particular key value pair from the object we can use delete keyword
@@ -139,7 +141,7 @@ const {
   heroien: newHeroien,
   director: newDirector,
   music: NewMusic,
-} = movie1;
+} = movie1; // complete destructing
 console.log(newHero, newHeroien, newDirector, NewMusic); //Vijay Sai pallavi Lokesh Aniruth
 
 const {hero} = movie1

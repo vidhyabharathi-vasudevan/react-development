@@ -21,10 +21,14 @@ class Pizza {
   }
 }
 
+//difference between get,set accessors and normal function
+//get,set accessors -> these are accessors we can call without paranthesis ()
+//normal functions -> just a block of code, call with ()
+
 const pizza = new Pizza("margarita", "medium", "Original"); //whenever we try to create a new pizza -> new object we can pass the properties for that pizza here
 
-pizza.toppingsPizza = "Sussage";
-pizza.toppingsPizza = "Olives"
+pizza.toppingsPizza = "Sussage";//setting them
+pizza.toppingsPizza = "Olives"//setting them here
 // console.log(pizza.toppings); //['Sussage', 'Olives']
 
 // console.log(pizza.bake()); //Backing a medium margarita Original pizza with toppings of Sussage
@@ -55,7 +59,7 @@ burger.setSize('Large')
 // console.log(burger.organize()); //This is a Chicken burger and Large in size
 
 
-//Concept of Parent and Child class -> Start we start?
+//Concept of Parent and Child class -> Shall we start?
 
 class Roll {
     crust = "Original";

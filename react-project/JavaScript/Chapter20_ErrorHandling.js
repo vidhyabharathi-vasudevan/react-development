@@ -1,6 +1,10 @@
 //Errors and Error Handling
+//Types:
+// 1) Reference Error -> Initializing the variable without defining it -> only in strict mode -> "use strict"
+// 2) Syntax Error -> Syntax issue or any typo issue
+// 3) Type Error -> Assingment to a const variable
 
-"use strict"
+"use strict";
 //1) Reference Error
 // variable = 'Heyyy'
 // console.log(variable);//Heyy
@@ -11,7 +15,6 @@
 
 //to solve the above issue we must declare the variable as let or const
 
-
 //2) Syntax error
 // Object..create(); -> results in syntax error
 
@@ -19,33 +22,27 @@
 //  const hi = 'hi'
 //  hi = 'hello' //TypeError: Assignment to constant variable.
 
- //Syntax error we can find before running but the other 2 errors Typeerror and reference error will come in the run time
+//Syntax error we can find before running but the other 2 errors Typeerror and reference error will come in the run time
 
+//Error handling -> as you know try catch
 
- //Error handling -> as you know try catch
+const makeError = () => {
+  try {
+    const hellow = "Hello";
+    hellow = "hi";
+  } catch (error) {
+    console.log("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> as a statement or log
+    console.error("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> makeError -> as error
+    console.warn("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> as a warning
+    console.table(error); //(index)
+    // Value
+    // stack	'TypeError: Assignment to constant variable.\n at…1:5500/JavaScript/Chapter20_ErrorHandling.js:39:2'
+    // message	'Assignment to constant variabl -> in table formate
 
- const makeError = () =>{
-    try{
-        const hellow = 'Hello'
-        hellow = 'hi'
-    }catch(error){
-        console.log('Please dont stop the execution',error); //Please dont stop the execution TypeError: Assignment to constant variable. -> as a statement or log
-        console.error('Please dont stop the execution',error); //Please dont stop the execution TypeError: Assignment to constant variable.
-    // at makeError -> as error
-    console.warn('Please dont stop the execution',error);//Please dont stop the execution TypeError: Assignment to constant variable. -> as a warning
-    console.table(error) //(index)
-// Value
-// stack	'TypeError: Assignment to constant variable.\n at…1:5500/JavaScript/Chapter20_ErrorHandling.js:39:2'
-// message	'Assignment to constant variabl -> in table formate
+    //there are many like these just refer mdn documentation
 
-//there are many like these just refer mdn documentation
-
-console.log(error.name); //TypeError
-
-    }
- }
- makeError()
- console.log('code will run now');
- 
-
-
+    console.log(error.name); //TypeError
+  }
+};
+makeError();
+console.log("code will run now");
