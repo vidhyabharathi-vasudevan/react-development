@@ -14,6 +14,7 @@ const onClickingOfElement = () => {
 document.addEventListener('readystatechange',(event)=>{
     console.log(event.target.readyState); //complete - that is the readystatechange means all the data from the server is loaded now, we are ready to start the app now
     initApp()
+    initApps()
     
 })
 const initApp = () =>{
@@ -53,5 +54,15 @@ element.addEventListener('click',(event)=>{
 //opposite for this doubling up -> useCapture as true -> top down -> even if we click the child first -> actions for parent will happen first
 //9.29 mins
 
+//Toggle -> up and down -> vise versa
+
+const initApps = () =>{
+ const view3 = document.querySelector("#view3")
+  const myForm = view3.querySelector("#myForm")
+  myForm.addEventListener("submit",(event)=>{
+    event.preventDefault() // to prevent default behavior of addEventListeners, here to prevent reloading
+    console.log("Submit event")
+  })
+}
 
 
