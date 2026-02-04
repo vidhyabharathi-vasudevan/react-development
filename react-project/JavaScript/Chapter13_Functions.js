@@ -30,6 +30,10 @@ const arrowFunction = (args) => {
 };
 console.log(arrowFunction("VIDHYA"));//vidhya
 
+// Arrow Functions allow a shorter syntax for function expressions. You can skip the function keyword, the return keyword, and the curly brackets: const add = (a, b) => a * b;
+// we skip return keyword when we don't have the curly brackets.
+
+
 // difference between slice and splice
 // slice -> returns a new array, without modifying the original array
 // splice -> modify the original array -> removes the elements at index 

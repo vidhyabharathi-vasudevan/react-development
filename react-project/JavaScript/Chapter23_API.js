@@ -9,31 +9,41 @@
 // * Storage limit is larger than a cookie(at most 5MB).
 
 //2) local storage -> does the same thing, but persists even when the browser is closed and reopened.
-// * Stores data with no expiration date and gets cleared only throgh Javascript pr clearing the Browser's cache/ Locally stored data.
+// * Stores data with no expiration date and gets cleared only throgh Javascript or clearing the Browser's cache/ Locally stored data.
 // * Storage limit is the maximum among session storage and cookie
 
 
 //Comparison summary of cookies, Local storage and session storage
-// Feature	        Cookies	        Local Storage	        Session Storage
-// Capacity	        4KB (Small)	    5MB - 10MB (Large)	    5MB (Large)
-// Expires	        Manually set    Never	                When Tab is closed
-// Sent to Server?	Yes	            No	                    No
-// Access	        Any window	    Any window	            Only that specific tab
+// Feature	        Cookies	        	 Session Storage                    Local Storage
+// Capacity	        4KB (Small)	    	 5MB (Large)                        5MB - 10MB (Large)
+// Expires	        Manually set    	 When Tab is closed                 Never
+// Sent to Server?	Yes	            	 No                                 No
+// Access	          Any window	    	 Only that specific tab             Any window
+
+//To access the sessionStorage and localStorage
+//Window.sessionStorage || Widow.localStorage
+
 
 //API -> Application Programming Interface
 
-document.addEventListener("readyStateChange", (event) => {
+document.addEventListener("readystatechange", (event) => {
 if(event.target.readyState === 'complete'){
     console.log('complete')
-  initApp();
+    initApp();
 
 }
 });
 const initApp = () => {
- const view3 = document.querySelector("#view3")
-  const myForm = view3.querySelector("#myForm")
-  myForm.addEventListener("submit",(event)=>{
-    event.preventDefault() // to prevent default behavior of addEventListeners, here to prevent reloading
-    console.log("Submit event")
-  })
+  console.log('hi')
+//  const myContent = ['Earn','Grow','Give']
+ const myObject = {
+  name:'Vidhyabharathi',
+  myContent:['Earn','Grow','Give'],
+  logName: function () {
+    console.log(this.name) //this -> this object
+  }
+ };
+ window.sessionStorage.setItem('mySessionStorage',JSON.stringify(myObject));
+ const mySessionData = JSON.parse(sessionStorage.getItem("mySessionStorage"));
+ console.log(mySessionData,"MYSESSIONDATA")
 };

@@ -9,6 +9,10 @@ To get the type of that value/variable
     typeof true -> 'boolean'
     typeof 'Vb' -> 'string'
     let myVariable  -> typeof myVariable  -> 'undefined'
+    typeof('value') -> string
+    typeof(90)-> number
+    typeof(false) -> boolean
+
     
 Variables -> follow camalCasing for all names(ex. Functions and variables,,,)
 String concatination applies here as well (like java, programming world)

@@ -1,10 +1,10 @@
 Strings and Its methods:
 Refer index.js for its functionalities
-    1) length
-    2) charAt
-    3) indexOf
-    4) lastIndexOf
-    5) slice(startIndex,endIndex) EndIndex is exclusive
+    1) length - to get the length of the string
+    2) charAt - to get the character at the specified index (need to pass index as argument to this function)
+    3) indexOf - opposite to charAt function. to get the index of the specified character, if the char is not present in the string it'll return -1 (need to pass the character to the function)
+    4) lastIndexOf - indexOf will return the first index of that char, to get the last index of that char, if the character occurs more than 2 times in a string.
+    5) slice(startIndex,endIndex) EndIndex is exclusive -> returns new array, without  modifying the existing/original array 
     6) toUpperCase -> VIDHYABHARATHI
     7) toLowerCase -> vidhyabharathi
     8) includes -> just check whether that particular character or string exists in that string returns a boolean value if its there

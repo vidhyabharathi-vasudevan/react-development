@@ -6,7 +6,7 @@ switch (n) {
     console.log(n);
     break;
   case 10:
-    console.log(90);
+    console.log(90); // 90
     break;
   default:
     console.log(0);

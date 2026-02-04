@@ -5,7 +5,7 @@ var x = 2;
 console.log(`global: ${x}`); //global: 2
 
 //op: 2 overrides the latest one also we can declare the same variable name more than one time
-// but after 2015 we are not using var
+// but after 2015 we are not using var [Afte ES6 = ECMA Specification]
 
 
 //let 
