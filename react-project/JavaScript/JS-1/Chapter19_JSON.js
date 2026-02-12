@@ -34,8 +34,8 @@ console.log(receiveJSON); //{name: 'Vidhyabharathi Vasudevan', age: 23, professi
 console.log(typeof receiveJSON);//object
 //To convert the string json to object we can use parse function
 //its parsing the string into an object
-// JSON to String -> stringify()
-// String to JSON -> parse() -> to object
+// JSON to String -> stringify() -> type string(JSON.stringify)
+// String to JSON -> parse() -> to object -> type object(JSON.parse)
 
 
 

@@ -22,7 +22,7 @@
 //  const hi = 'hi'
 //  hi = 'hello' //TypeError: Assignment to constant variable.
 
-//Syntax error we can find before running but the other 2 errors Typeerror and reference error will come in the run time
+//Syntax error we can find before running but the other 2 errors Typeerror and reference error will occur in the run time
 
 //Error handling -> as you know try catch
 
@@ -31,9 +31,9 @@ const makeError = () => {
     const hellow = "Hello";
     hellow = "hi";
   } catch (error) {
-    console.log("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> as a statement or log
-    console.error("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> makeError -> as error
-    console.warn("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> as a warning
+    console.log("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> as a statement or log -> blue
+    console.error("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> makeError -> as error ->red 
+    console.warn("Please dont stop the execution", error); //Please dont stop the execution TypeError: Assignment to constant variable. -> as a warning ->yellow
     console.table(error); //(index)
     // Value
     // stack	'TypeError: Assignment to constant variable.\n at…1:5500/JavaScript/Chapter20_ErrorHandling.js:39:2'
@@ -46,3 +46,6 @@ const makeError = () => {
 };
 makeError();
 console.log("code will run now");
+
+
+//TypeError, Syntax Error, Reference Error

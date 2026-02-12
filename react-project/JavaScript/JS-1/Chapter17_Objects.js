@@ -119,7 +119,7 @@ for (let job in movie) {
 delete movie.director;
 console.log(movie); //{hero: 'Vijay', heroien: 'Sai pallavi', music: 'Aniruth'}
 
-//to check if that particular property is there in the object or not
+//to check if that particular property/key is there in the object or not
 //we can use hasOwnProperty
 
 console.log(movie.hasOwnProperty("director")); //false -> because we deleted the director property in the above lines -> there is no property called director now

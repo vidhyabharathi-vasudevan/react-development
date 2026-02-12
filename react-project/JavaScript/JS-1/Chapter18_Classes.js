@@ -89,6 +89,10 @@ class specialRoll extends Roll{
         console.log(`Our ${this.crust} ${this.type} has 4 pieces ${this.size} ${this.sauce}`);
     }
 }
+
+//this -> current object reference
+//super -> to refer/access parent class properties and in constructor it must be called before using the this 
+//In Constructors: super() must be called in a derived class's constructor before using this to correctly initialize the parent class portion of the instance [1].
 const specialRollObj = new specialRoll("Large");
 specialRollObj.sauce = 'Chilli'
 console.log(specialRollObj.sauce); //chilli
